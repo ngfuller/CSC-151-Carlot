@@ -34,6 +34,11 @@ public class Car {
 				+ cost + ", Selling price:  $" + salesPrice + ", Sold For  $" + priceSold + ", Profit:  $" + profit;
 	}
 	
+	// Prints all raw data for this Car object
+	public String toString(int i) {
+		return id + " " + mileage + " " + mpg + " " + sold + " " + cost + " " + salesPrice + " " + priceSold + " " + profit + "\n";
+	}
+	
 	// Compares this car's MPG to another car and returns an integer
 	int compareMPG(Car otherCar) {
 		if (this.mpg < otherCar.mpg)
@@ -87,6 +92,11 @@ public class Car {
 	// Return car sales price
 	double getSalesPrice() {
 		return salesPrice;
+	}
+	
+	// Return car sold state
+	boolean getSold() {
+		return sold;
 	}
 	
 	// Return car profit
